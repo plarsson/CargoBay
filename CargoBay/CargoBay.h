@@ -50,6 +50,11 @@
                         success:(void (^)(NSArray *products, NSArray *invalidIdentifiers))success
                         failure:(void (^)(NSError *error))failure;
 
+
+-(void)receiptPurchaseDate:(NSData *)transactionReceipt
+                   success:(void (^)(NSDate *purchaseDate))success
+                   failure:(void (^)(NSError *error))failure;
+
 ///-------------------------------
 /// @name Transaction Verification
 ///-------------------------------
